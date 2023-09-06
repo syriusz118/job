@@ -1,5 +1,4 @@
-import {Checkbox, styled} from "@mui/material";
-import {TextFieldElement} from 'react-hook-form-mui';
+import {Button, Checkbox, styled, TextField} from "@mui/material";
 
 export const Container = styled('div')`
   display: flex;
@@ -39,7 +38,7 @@ export const PortInputLabel = styled('span')`
   margin-right: 10px;
 `;
 
-export const TextInput = styled(TextFieldElement)`
+export const TextInput = styled(TextField)`
   min-width: 195px;
   
   & .MuiTextField-root {
@@ -58,6 +57,8 @@ export const AdditionalFieldsWrapper = styled('div')`
   justify-content: center;
   width: 450px;
   height: 30px;
+  padding-left: 17px;
+  margin-top: 10px;
 `;
 
 export const CheckBoxWrapper = styled('div')`
@@ -72,9 +73,9 @@ export const SSLCheckbox = styled(Checkbox)`
   margin-right: 10px;
 `;
 
-export const PortInput = styled(TextFieldElement)`
+export const PortInput = styled(TextField)`
   width: 100px;
-  margin-right: 20px;
+  margin-right: 10px;
   
   & .MuiTextField-root {
     height: 30px;
@@ -86,3 +87,16 @@ export const PortInput = styled(TextFieldElement)`
     height: 30px;
   }
 `
+
+export const SubmitButtonWrapper = styled('div')`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+`;
+
+export const SubmitButton = styled(Button)`
+  width: 150px;
+`;
